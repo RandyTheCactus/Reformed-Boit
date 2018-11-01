@@ -1,0 +1,21 @@
+const commando = require('discord.js-commando')
+
+class AddMusicCommand extends commando.Command
+{
+    constructor(client)
+    {
+        super(client, {
+            name: 'add',
+            group: 'music',
+            memberName: 'add',
+            description: 'Adds song to queue'
+        });
+    }
+
+    async run(message, args)
+    {
+        message.reply("Incomplete Command. Coming in version 1.2.0")
+    }
+}
+
+module.exports = AddMusicCommand;
